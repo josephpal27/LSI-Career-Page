@@ -40,6 +40,59 @@ document.addEventListener('click', () => {
 // Initially hide all content boxes
 toggleContentBoxes();
 
+// ---------------------------------------------------------
+
+// Functionality for Nav Menu Toggle
+let menuBtn = document.querySelector('.nav-menu ul .fa-bars');
+let navMenu2 = document.querySelector('.nav-menu-2');
+
+menuBtn.addEventListener('click', () => {
+    if (navMenu2.style.opacity == '1') {
+        navMenu2.style.height = '0';
+        navMenu2.style.opacity = '0';
+        navMenu2.style.zIndex = '-10';
+
+    } else {
+        navMenu2.style.opacity = '1';
+        navMenu2.style.zIndex = '10';
+        navMenu2.style.height = 'auto';
+    }
+})
+
+
+let aboutUs = document.getElementById('about-us');
+let aboutUsContent = document.getElementById('about-us-content');
+
+aboutUs.addEventListener('click', () => {
+    if (aboutUsContent.style.display == 'block') {
+        aboutUsContent.style.display = 'none';
+    } else {
+        aboutUsContent.style.display = 'block';
+    }
+})
+
+let companies = document.getElementById('companies');
+let companiesContent = document.getElementById('companies-content');
+
+companies.addEventListener('click', () => {
+    if (companiesContent.style.display == 'block') {
+        companiesContent.style.display = 'none';
+    } else {
+        companiesContent.style.display = 'block';
+    }
+})
+
+let research = document.getElementById('research');
+let researchContent = document.getElementById('research-content');
+
+research.addEventListener('click', () => {
+    if (researchContent.style.display == 'block') {
+        researchContent.style.display = 'none';
+    } else {
+        researchContent.style.display = 'block';
+    }
+})
+
 
 // ------------------------------------------------------------------------------------------------------------------------------
 
