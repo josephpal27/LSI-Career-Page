@@ -549,9 +549,11 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 55%;
+    overflow: hidden;
   }
   .life .right img{
-    width: 85%;
+    width: 100%;
   }
   /* Life Section Ends Here */
 
